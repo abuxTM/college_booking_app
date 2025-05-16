@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <section class="Confirmation">
+      <a class="back-link" href="#">&larr; Home</a>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Booking App</title>
-  <link href="style.css" rel="stylesheet">
-  <script src="main.js" defer></script>
-</head>
+      <div class="logo"><span>FUN</span>Slot</div>
 
-<body>
-  <div>
-  </div>
-</body>
+      <div class="checkmark">
+        <img src="img/Checkmark.png" alt="Checkmark" />
+      </div>
 
+      <div class="confirmation-message">Your Booking was confirmed!</div>
+
+      <div class="details">
+        Your order has been processed and your order details can be viewed
+        anytime by going to the booking page within the app
+      </div>
+
+      <div class="details">
+        You will shortly get an email confirmation and a receipt of this order
+      </div>
+
+      <div class="thank-you">Thank you!</div>
+
+      <div class="reference">Booking reference ID: ••••••</div>
+
+      <button class="button browse">Browse more activities</button>
+      <button class="button cancel">Cancel this order here</button>
+      <div class="home-link">Return to Home page</div>
+
+    </section>
+
+
+    <section class="Cancellation" style="display: none;">
+      <a class="back-link" href="#">&larr; Home</a>
+    
+      <div class="logo"><span>FUN</span>Slot</div>
+    
+      <div class="headline">We’re sorry to see you go!</div>
+      <div class="subtext">
+        Your booking for <strong>*Event Name*</strong> on <strong>*Date*</strong> has been successfully cancelled.
+      </div>
+    
+      <div class="refund-box">
+        <div class="refund-row">
+          <div class="checkmark">
+            <img src="img/SmallCheckmark.png" alt="Small Checkmark">
+          </div>
+          <div class="refund-text">
+            You will receive a refund for this order in X business days
+          </div>
+        </div>
+        
+        <div class="support">
+          Need help? Reach out to us on our <a href="#">Support team</a>
+        </div>
+        
+        <div class="rating">Rate us based on your experience!</div>
+        <div class="stars">★★★★★</div>
+      </div>
+      
+    
+      <div class="illustration">
+        <!-- You can replace this with an inline SVG or actual image -->
+        <img src="img/Man.png" alt="Person illustration" />
+      </div>
+    
+      <button class="button">Browse more activities</button>
+      <div class="home-link">Return to Home page</div>
+    </section>
+    
+  </body>
 </html>

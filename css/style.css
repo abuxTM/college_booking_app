@@ -1,0 +1,258 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Aidans Css code */ 
+body {
+    margin: 0;
+    background-color: #fdf6e4;
+    font-family: jura;
+    font-size: 16px;
+    color: #3e3e4a;
+  }
+  /* Confirmation section CSS*/
+  .Confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Back link */
+  .Confirmation .back-link {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* Logo */
+  .Confirmation .logo {
+    font-size: 36px;
+    
+    margin-bottom: 20px;
+    
+  }
+  
+  .Confirmation .logo span {
+    font-family: 'Monoton';
+    
+  }
+  
+ .Confirmation img{
+    width: 132px;
+    height: 130px;
+ }
+  
+  /* Headline message */
+  .Confirmation .confirmation-message {
+    
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Supporting text */
+  .Confirmation .details {
+    
+    text-align: center;
+    font-weight: 500;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  /* Thank you */
+  .Confirmation .thank-you {
+    
+    margin: 20px 0;
+  }
+  
+  /* Booking reference */
+  .Confirmation .reference {
+    
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons */
+  .Confirmation .button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .Confirmation .browse {
+    background-color: #91b7aa;
+    color: white;
+  }
+  
+  .Confirmation .cancel {
+    background-color: #f2aaa3;
+    color: white;
+  }
+  .Confirmation .home-link{
+    margin-top: 1rem;
+
+  }
+
+
+
+
+/* Cancellation CSS rules*/
+.Cancellation {
+  background-color: #fdf6e4;
+  color: #3e3e4a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Cancellation .back-link {
+  align-self: flex-start;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.Cancellation .logo {
+  font-size: 36px;
+  margin-bottom: 20px;
+  
+  
+}
+
+.Cancellation .logo span {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Monoton', cursive;
+  
+}
+
+.Cancellation .headline {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.Cancellation .subtext {
+  text-align: center;
+  
+  margin-bottom: 20px;
+  max-width: 320px;
+}
+
+.refund-box {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.refund-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Checkmark goes here */
+
+.refund-text {
+  color: #91b7aa;
+  font-weight: 500;
+  
+}
+
+
+.Cancellation .refund-text {
+  color: #91b7aa;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Cancellation .support {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.Cancellation .support a {
+  color: #66a3d2;
+  text-decoration: underline;
+}
+
+.Cancellation .rating {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Cancellation .stars {
+  text-align: center;
+  color: #f2b01e;
+  letter-spacing: 5px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+.Cancellation .illustration {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Cancellation .illustration img {
+  width: 80px;
+  height: auto;
+}
+
+.Cancellation .button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #91b7aa;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.Cancellation .home-link {
+  text-decoration: underline;
+  color: #3e3e4a;
+}
+
+
+
+
+
+/* Media queries*/
+  @media (min-width: 800px){
+    .Confirmation .confirmation-message {
+      font-style: italic;
+
+    }
+
+  }
+  
