@@ -2,8 +2,8 @@
   /* Aidans jQuery Code */ 
   
   $(document).ready(function () {
-    // Initially show confirmation, hide cancellation
-    $('.Confirmation').show();
+    
+    $('.Confirmation').hide();
     $('.Cancellation').hide();
 
     // Show booking confirmation section
