@@ -1,119 +1,94 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Aidans Css code */ 
 body {
-    margin: 0;
-    background-color: #fdf6e4;
-    font-family: jura;
-    font-size: 16px;
-    color: #3e3e4a;
-  }
-  /* Confirmation section CSS*/
-  .Confirmation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
-  
-  /* Back link */
-  .Confirmation .back-link {
-    align-self: flex-start;
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #000;
-    text-decoration: none;
-  }
-  
-  /* Logo */
-  .Confirmation .logo {
-    font-size: 36px;
-    
-    margin-bottom: 20px;
-    
-  }
-  
-  .Confirmation .logo span {
-    font-family: 'Monoton';
-    
-  }
-  
- .Confirmation img{
-    width: 132px;
-    height: 130px;
- }
-  
-  /* Headline message */
-  .Confirmation .confirmation-message {
-    
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  /* Supporting text */
-  .Confirmation .details {
-    
-    text-align: center;
-    font-weight: 500;
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-  
-  /* Thank you */
-  .Confirmation .thank-you {
-    
-    margin: 20px 0;
-  }
-  
-  /* Booking reference */
-  .Confirmation .reference {
-    
-    margin-bottom: 30px;
-  }
-  
-  /* Buttons */
-  .Confirmation .button {
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 20px;
-    
-    border: none;
-    cursor: pointer;
-    width: fit-content;
-  }
-  
-  .Confirmation .browse {
-    background-color: #91b7aa;
-    color: white;
-  }
-  
-  .Confirmation .cancel {
-    background-color: #f2aaa3;
-    color: white;
-  }
-  .Confirmation .home-link{
-    margin-top: 1rem;
+  margin: 0;
+  background-color: #fdf6e4;
+  font-family: jura;
+  font-size: 16px;
+  color: #3e3e4a;
+}
 
-  }
+/* Confirmation section CSS*/
+.Confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
 
+/* Back link */
+.Confirmation .back-link {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
 
+/* Logo */
+.Confirmation .logo {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 
+.Confirmation .logo span {
+  font-family: 'Monoton';
+}
+
+.Confirmation img{
+  width: 132px;
+  height: 130px;
+}
+
+/* Headline message */
+.Confirmation .confirmation-message {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Supporting text */
+.Confirmation .details {
+  text-align: center;
+  font-weight: 500;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Thank you */
+.Confirmation .thank-you {
+  margin: 20px 0;
+}
+
+/* Booking reference */
+.Confirmation .reference {
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.Confirmation .button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.Confirmation .browse {
+  background-color: #91b7aa;
+  color: white;
+}
+
+.Confirmation .cancel {
+  background-color: #f2aaa3;
+  color: white;
+}
+.Confirmation .home-link{
+  margin-top: 1rem;
+}
 
 /* Cancellation CSS rules*/
 .Cancellation {
@@ -132,18 +107,16 @@ body {
   text-decoration: none;
   margin-bottom: 20px;
 }
+
 .Cancellation .logo {
   font-size: 36px;
   margin-bottom: 20px;
-  
-  
 }
 
 .Cancellation .logo span {
   font-size: 36px;
   margin-bottom: 20px;
   font-family: 'Monoton', cursive;
-  
 }
 
 .Cancellation .headline {
@@ -155,7 +128,6 @@ body {
 
 .Cancellation .subtext {
   text-align: center;
-  
   margin-bottom: 20px;
   max-width: 320px;
 }
@@ -182,9 +154,7 @@ body {
 .refund-text {
   color: #91b7aa;
   font-weight: 500;
-  
 }
-
 
 .Cancellation .refund-text {
   color: #91b7aa;
@@ -216,7 +186,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 .Cancellation .illustration {
   text-align: center;
   margin-bottom: 30px;
@@ -243,16 +212,9 @@ body {
   color: #3e3e4a;
 }
 
-
-
-
-
 /* Media queries*/
-  @media (min-width: 800px){
-    .Confirmation .confirmation-message {
-      font-style: italic;
-
-    }
-
+@media (min-width: 800px){
+  .Confirmation .confirmation-message {
+    font-style: italic;
   }
-  
+}

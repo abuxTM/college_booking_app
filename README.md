@@ -2,8 +2,8 @@
 Single file
 
 # Coding Style
-Use 2 spacing instead of 4
-Comment as you go
+Use 2 spacing instead of 4<br>
+Comment as you go<br>
 
 *Do:*
 ```
@@ -18,4 +18,9 @@ Comment as you go
 <div>
     <h1>Hello World</h1>
 </div>
+```
+
+*Run Live Server:*
+```
+bun dev
 ```
