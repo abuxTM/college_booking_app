@@ -1,15 +1,181 @@
-/* Aidans Css code */ 
+/*You can use these values with 'var(--bg)'*/
+:root {
+  --bg: #F6F1DE;
+  --fg: #3e3e4a;
+  --primary: #8AB2A6;
+  --secondary: #ACD3A8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Aidans Css code */
 body {
   margin: 0;
-  background-color: #fdf6e4;
+  background-color: var(--bg);
   font-family: jura;
   font-size: 16px;
-  color: #3e3e4a;
+  color: var(--fg);
 }
+
+/*===============================================================*/
+/*Navigatron*/
+/*===============================================================*/
+
+/*This meant to be only used on mobile (for now)*/
+#navigatron {
+  display: flex;
+  position: fixed;
+
+  left: 0;
+  bottom: 0;
+
+  justify-content: space-between;
+  align-items: center;
+
+  width: calc(100% - 24px);
+  height: 100px;
+
+  margin: 12px;
+  padding: 0 40px;
+
+  border-radius: 60px;
+  background-color: var(--primary);
+}
+
+#navigatron a {
+  padding: 10px;
+  border-radius: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#navigatron a:hover {
+  background-color: var(--secondary);
+}
+
+/*===============================================================*/
+/*Navbar Section*/
+/*===============================================================*/
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  height: 80px;
+  width: 100%;
+  padding: 12px;
+
+  background-color: var(--primary);
+  z-index: 1000;
+}
+
+#navbar #profile {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar .logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+#navbar #profile img {
+  height: 100%;
+}
+
+/*===============================================================*/
+/*Home Section*/
+/*===============================================================*/
+
+#home_section {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 80px;
+}
+
+/*===============================================================*/
+/*Card & Spawner*/
+/*===============================================================*/
+
+#card_spawner {
+  display: flex;
+  flex-direction: column;
+
+  padding: 12px;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  max-height: 300px;
+
+  border-radius: 12px;
+  background: var(--secondary);
+}
+
+.card>* {
+  padding: 0;
+  margin: 0;
+}
+
+.card .card_info {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.card .card_info>* {
+  margin: 0;
+  padding: 0;
+}
+
+.card .card_info div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .card_info div>* {
+  margin: 0;
+  padding: 0;
+}
+
+.card .card_info div button {
+  background-color: var(--primary);
+
+  width: 100px;
+  height: 25px;
+
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+/*===============================================================*/
+/*Confirmation Section*/
+/*===============================================================*/
 
 /* Confirmation section CSS*/
 .Confirmation {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -36,7 +202,7 @@ body {
   font-family: 'Monoton';
 }
 
-.Confirmation img{
+.Confirmation img {
   width: 132px;
   height: 130px;
 }
@@ -71,7 +237,7 @@ body {
   padding: 10px 20px;
   margin: 10px;
   border-radius: 20px;
-  
+
   border: none;
   cursor: pointer;
   width: fit-content;
@@ -86,16 +252,21 @@ body {
   background-color: #f2aaa3;
   color: white;
 }
-.Confirmation .home-link{
+
+.Confirmation .home-link {
   margin-top: 1rem;
 }
 
+/*===============================================================*/
+/*Cancelation Section*/
+/*===============================================================*/
+
 /* Cancellation CSS rules*/
 .Cancellation {
+  display: none;
   background-color: #fdf6e4;
   color: #3e3e4a;
   padding: 20px;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -212,9 +383,47 @@ body {
   color: #3e3e4a;
 }
 
-/* Media queries*/
-@media (min-width: 800px){
+/*===============================================================*/
+/*Media Queries*/
+/*===============================================================*/
+
+@media (min-width: 800px) {
   .Confirmation .confirmation-message {
     font-style: italic;
+  }
+}
+
+/* Tablets */
+@media (min-width: 600px) {
+  #home_section {
+    padding: 12px 48px;
+  }
+}
+
+/* Laptops */
+@media (min-width: 768px) {
+  #home_section {
+    padding: 12px 200px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  #home_section {
+    padding: 12px 300px;
+  }
+}
+
+/* Desktops (Large Edition) */
+@media (min-width: 1280px) {
+  #home_section {
+    padding: 12px 500px;
+  }
+}
+
+/* XXL Screens */
+@media (min-width: 1440px) {
+  #home_section {
+    padding: 12px 600px;
   }
 }
