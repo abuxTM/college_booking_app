@@ -401,6 +401,28 @@ body {
   text-decoration: underline;
   color: #3e3e4a;
 }
+.full-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/img/image\ 9.png'); /* Replace with actual filename if needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 20px 0;
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+  margin: 0 auto 20px;
+  display: block;
+}
 
 #welcome-section {
   display: flex;
