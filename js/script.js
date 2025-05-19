@@ -88,54 +88,62 @@ cards.conjureCards();
 
 /* Aidans jQuery Code */
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('#home_section').hide();
   $('#navigatron').hide();
 
   // Show booking confirmation section
-  $('#find_more_btn').click(function () {
+  $('#find_more_btn').click(function() {
     $('.Confirmation').show();
     $('#home_section').hide();
     $('.Cancellation').hide();
   });
 
   // Show booking confirmation section
-  $('#show-confirmation').click(function () {
+  $('#show-confirmation').click(function() {
     $('.Confirmation').show();
     $('.Cancellation').hide();
   });
 
   // Show booking cancellation section
-  $('#show-cancellation').click(function () {
+  $('#show-cancellation').click(function() {
     $('.Cancellation').show();
     $('.Confirmation').hide();
   });
 
   // Optional: Add logic inside the confirmation section
-  $('.cancel').click(function () {
+  $('.cancel').click(function() {
     $('.Confirmation').hide();
     $('.Cancellation').show();
   });
 
   // Optional: Return to home logic
-  $('.home-link, .back-link').click(function () {
+  $('.home-link, .back-link').click(function() {
     $('.Confirmation, .Cancellation').hide();
     $('#home_section').show();
   });
 
-  $('#go-login').click(function () {
-    $('#login-section').show();
+  $('#go-login').click(function() {
+    $('#login-section').css('display', 'flex');
     $('#signup-section').hide();
     $('#welcome-section').hide();
   })
-  $('#go-signup').click(function () {
-    $('#signup-section').show();
+
+  $('#go-signup').click(function() {
+    $('#signup-section').css('display', 'flex');
     $('#welcome-section').hide();
     $('#login-section').hide();
   })
+
+  $('.auth_btn').click(function() {
+    $('#signup-section').hide();
+    $('#welcome-section').hide();
+    $('#login-section').hide();
+    $('#home_section').css('display', 'flex');
+  })
 });
 
-$(window).on('scroll', function () {
+$(window).on('scroll', function() {
   let scroll_top = $(window).scrollTop();
   let window_height = $(window).height();
   let document_height = $(document).height();
