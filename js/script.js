@@ -111,7 +111,7 @@ $(document).ready(function() {
 
   // Show booking confirmation section
   $('.find_more_btn').click(function() {
-    $('.Confirmation').show();
+    $('.Confirmation').css('display', 'flex');
     $('#home_section').hide();
     $('.Cancellation').hide();
     $('#navigatron').hide();
@@ -125,14 +125,14 @@ $(document).ready(function() {
 
   // Show booking cancellation section
   $('#show-cancellation').click(function() {
-    $('.Cancellation').show();
+    $('.Cancellation').css('display', 'flex');
     $('.Confirmation').hide();
   });
 
   // Optional: Add logic inside the confirmation section
   $('.cancel').click(function() {
     $('.Confirmation').hide();
-    $('.Cancellation').show();
+    $('.Cancellation').css('display', 'flex');
   });
 
   // Optional: Return to home logic
