@@ -89,6 +89,9 @@ cards.conjureCards();
 /* Aidans jQuery Code */
 
 $(document).ready(function () {
+  $('#home_section').hide();
+  $('#navigatron').hide();
+
   // Show booking confirmation section
   $('#find_more_btn').click(function () {
     $('.Confirmation').show();
@@ -119,6 +122,17 @@ $(document).ready(function () {
     $('.Confirmation, .Cancellation').hide();
     $('#home_section').show();
   });
+
+  $('#go-login').click(function () {
+    $('#login-section').show();
+    $('#signup-section').hide();
+    $('#welcome-section').hide();
+  })
+  $('#go-signup').click(function () {
+    $('#signup-section').show();
+    $('#welcome-section').hide();
+    $('#login-section').hide();
+  })
 });
 
 $(window).on('scroll', function () {
@@ -127,7 +141,7 @@ $(window).on('scroll', function () {
   let document_height = $(document).height();
 
   // Check for EOF (End-Of-File)
-  if (scroll_top + window_height >= document_height - 1) {
+  if ($('#home_section').hidden() && scroll_top + window_height >= document_height - 1) {
     $('#navigatron').fadeOut(100);
   } else {
     $('#navigatron').fadeIn(100);
