@@ -66,7 +66,7 @@ class CardManager {
       // ========
       // TODO: Make sure to use 'link_to_about_section' here to open specific booking section
       let find_more_btn = document.createElement("button");
-      find_more_btn.setAttribute("id", "find_more_btn");
+      find_more_btn.setAttribute("class", "find_more_btn");
       find_more_btn.innerHTML = "Find More";
       div.appendChild(find_more_btn);
 
@@ -93,10 +93,11 @@ $(document).ready(function() {
   $('#navigatron').hide();
 
   // Show booking confirmation section
-  $('#find_more_btn').click(function() {
+  $('.find_more_btn').click(function() {
     $('.Confirmation').show();
     $('#home_section').hide();
     $('.Cancellation').hide();
+    $('#navigatron').hide();
   });
 
   // Show booking confirmation section
@@ -121,6 +122,7 @@ $(document).ready(function() {
   $('.home-link, .back-link').click(function() {
     $('.Confirmation, .Cancellation').hide();
     $('#home_section').show();
+    $('#navigatron').css('display', 'flex');
   });
 
   $('#go-login').click(function() {
@@ -140,6 +142,7 @@ $(document).ready(function() {
     $('#welcome-section').hide();
     $('#login-section').hide();
     $('#home_section').css('display', 'flex');
+    $('#navigatron').css('display', 'flex');
   })
 });
 
@@ -149,7 +152,7 @@ $(window).on('scroll', function() {
   let document_height = $(document).height();
 
   // Check for EOF (End-Of-File)
-  if ($('#home_section').hidden() && scroll_top + window_height >= document_height - 1) {
+  if (scroll_top + window_height >= document_height - 1) {
     $('#navigatron').fadeOut(100);
   } else {
     $('#navigatron').fadeIn(100);
