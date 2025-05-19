@@ -111,6 +111,19 @@ $(document).ready(function () {
     $('.Confirmation, .Cancellation').hide();
     $('#home_section').show();
   });
+
+    $('#go-login') .click(function() {
+      $('#login-section') .show();
+      $('#signup-section') .hide();
+      $('#welcome-section') .hide();
+    })
+    $('#go-signup') .click(function(){
+      $('#signup-section') .show();
+      $('#welcome-section') .hide();
+      $('#login-section') .hide();
+}) 
+
+
 });
 
 $(window).on('scroll', function () {
@@ -125,3 +138,5 @@ $(window).on('scroll', function () {
     $('#navigatron').fadeIn(100);
   }
 });
+
+

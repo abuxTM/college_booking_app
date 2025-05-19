@@ -383,6 +383,77 @@ body {
   color: #3e3e4a;
 }
 
+.welcome-text p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.4;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.button-area {
+  background-color: #f5f1e3;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.main-btn {
+  background-color: #a7c8b5;
+  color: black;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.main-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  padding: 40px 20px;
+  width: 80%;
+  max-width: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: #c6e3c8;
+  font-size: 14px;
+  outline: none;
+}
+
+.hidden{
+  display: none;
+}
+
 /*===============================================================*/
 /*Media Queries*/
 /*===============================================================*/
