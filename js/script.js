@@ -66,6 +66,7 @@ class CardManager {
       // ========
       // TODO: Make sure to use 'link_to_about_section' here to open specific booking section
       let find_more_btn = document.createElement("button");
+      find_more_btn.setAttribute("id", "find_more_btn");
       find_more_btn.innerHTML = "Find More";
       div.appendChild(find_more_btn);
 
@@ -88,6 +89,13 @@ cards.conjureCards();
 /* Aidans jQuery Code */
 
 $(document).ready(function () {
+  // Show booking confirmation section
+  $('#find_more_btn').click(function () {
+    $('.Confirmation').show();
+    $('#home_section').hide();
+    $('.Cancellation').hide();
+  });
+
   // Show booking confirmation section
   $('#show-confirmation').click(function () {
     $('.Confirmation').show();
