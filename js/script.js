@@ -92,6 +92,23 @@ $(document).ready(function() {
   $('#home_section').hide();
   $('#navigatron').hide();
 
+  // Navigatron
+  // =====================
+  $('#shroud_scan').click(function(e) {
+    e.preventDefault();
+    $('#navigatron a').hide();
+    $('#navigatron div').css("display", "flex");
+  });
+
+  $('#navigatron div button').click(function(e) {
+    e.preventDefault();
+    $('#navigatron a').show();
+    $('#navigatron div').hide();
+  });
+
+  // Yes
+  // =====================
+
   // Show booking confirmation section
   $('.find_more_btn').click(function() {
     $('.Confirmation').show();

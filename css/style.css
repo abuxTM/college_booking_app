@@ -182,6 +182,20 @@ input {
   background-color: var(--secondary);
 }
 
+#navigatron div {
+  display: none;
+  width: 100%;
+  gap: 12px
+}
+
+#navigatron div input {
+  width: 100%;
+}
+
+#navigatron div button {
+  width: 60px;
+}
+
 /*===============================================================*/
 /*Navbar Section*/
 /*===============================================================*/
