@@ -127,7 +127,7 @@ input {
   flex-direction: column;
 
   width: 90%;
-  
+
   padding: 20px;
   margin-bottom: 120px;
   gap: 15px;
@@ -243,14 +243,14 @@ input {
   display: flex;
   flex-direction: column;
 
-  margin-top: 80px;
+  margin-top: 200px;
 }
 
 /*===============================================================*/
 /*Card & Spawner*/
 /*===============================================================*/
 
-#card_spawner {
+#home_section #card_spawner {
   display: flex;
   flex-direction: column;
 
@@ -405,11 +405,13 @@ input {
 /* Cancellation CSS rules*/
 .Cancellation {
   display: none;
+  flex-direction: column;
   background-color: #fdf6e4;
   color: #3e3e4a;
   padding: 20px;
-  flex-direction: column;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .Cancellation .back-link {
@@ -527,7 +529,8 @@ input {
 .full-section {
   height: 100vh;
   width: 100vw;
-  background-image: url('/img/image\ 9.png'); /* Replace with actual filename if needed */
+  background-image: url('/img/image\ 9.png');
+  /* Replace with actual filename if needed */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -540,12 +543,13 @@ input {
 
 
 .form-wrapper {
+  display: none;
   width: 100%;
   max-width: 420px;
   margin: auto;
 }
 
-.form-container {
+.form-wrapper .form-container {
   background-color: #383a59;
   border-radius: 0 0 40px 50px;
   padding: 2rem;
@@ -569,7 +573,7 @@ h1 {
   text-align: center;
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-   margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 form {
@@ -619,6 +623,7 @@ label {
 
 /* Responsive tweaks */
 @media (max-width: 500px) {
+
   .name-group input,
   .location-group select {
     flex: 1 1 100%;
