@@ -1,0 +1,581 @@
+/*You can use these values with 'var(--bg)'*/
+:root {
+  --bg: #F6F1DE;
+  --fg: #3e3e4a;
+  --primary: #8AB2A6;
+  --secondary: #ACD3A8;
+}
+
+/*===============================================================*/
+/*Global Settings*/
+/*===============================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  font-family: jura;
+  font-size: 16px;
+  color: var(--fg);
+}
+
+button {
+  background-color: #a7c8b5;
+  color: black;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+input {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: #c6e3c8;
+  font-size: 14px;
+  outline: none;
+}
+
+/*===============================================================*/
+/*Welcome Section*/
+/*===============================================================*/
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-section .welcome-text p {
+  padding: 15px;
+
+  font-size: 18px;
+  line-height: 1.4;
+
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+#welcome-section .overlay {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  padding: 20px;
+  margin: 0 20px;
+  margin-top: auto;
+
+  text-align: center;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+#welcome-section .overlay .logo {
+  width: 180px;
+  margin: 20px;
+  margin-bottom: 60px;
+  display: block;
+}
+
+#welcome-section .button-area {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 30px 20px;
+  margin-top: auto;
+  gap: 15px;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #f5f1e3;
+}
+
+/*===============================================================*/
+/*Login Section*/
+/*===============================================================*/
+
+#login-section {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/*===============================================================*/
+/*Shared*/
+/*===============================================================*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+  
+  padding: 20px;
+  margin-bottom: 120px;
+  gap: 15px;
+
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+/*===============================================================*/
+/*Signup Section*/
+/*===============================================================*/
+
+#signup-section {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/*===============================================================*/
+/*Navigatron*/
+/*===============================================================*/
+
+/*This meant to be only used on mobile (for now)*/
+#navigatron {
+  display: flex;
+  position: fixed;
+
+  left: 0;
+  bottom: 0;
+
+  justify-content: space-between;
+  align-items: center;
+
+  width: calc(100% - 24px);
+  height: 100px;
+
+  margin: 12px;
+  padding: 0 40px;
+
+  border-radius: 60px;
+  background-color: var(--primary);
+}
+
+#navigatron a {
+  padding: 10px;
+  border-radius: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#navigatron a:hover {
+  background-color: var(--secondary);
+}
+
+#navigatron div {
+  display: none;
+  width: 100%;
+  gap: 12px
+}
+
+#navigatron div input {
+  width: 100%;
+}
+
+#navigatron div button {
+  width: 60px;
+}
+
+/*===============================================================*/
+/*Navbar Section*/
+/*===============================================================*/
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  height: 80px;
+  width: 100%;
+  padding: 12px;
+
+  background-color: var(--primary);
+  z-index: 1000;
+}
+
+#navbar #profile {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar .logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+#navbar #profile img {
+  height: 100%;
+}
+
+/*===============================================================*/
+/*Home Section*/
+/*===============================================================*/
+
+#home_section {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 80px;
+}
+
+/*===============================================================*/
+/*Card & Spawner*/
+/*===============================================================*/
+
+#card_spawner {
+  display: flex;
+  flex-direction: column;
+
+  padding: 12px;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  max-height: 300px;
+
+  border-radius: 12px;
+  background: var(--secondary);
+}
+
+.card>* {
+  padding: 0;
+  margin: 0;
+}
+
+.card .card_info {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.card .card_info>* {
+  margin: 0;
+  padding: 0;
+}
+
+.card .card_info div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .card_info div>* {
+  margin: 0;
+  padding: 0;
+}
+
+.card .card_info div button {
+  background-color: var(--primary);
+
+  width: 100px;
+  height: 25px;
+
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+/*===============================================================*/
+/*Confirmation Section*/
+/*===============================================================*/
+
+/* Confirmation section CSS*/
+.Confirmation {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Back link */
+.Confirmation .back-link {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Logo */
+.Confirmation .logo {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.Confirmation .logo span {
+  font-family: 'Monoton';
+}
+
+.Confirmation img {
+  width: 132px;
+  height: 130px;
+}
+
+/* Headline message */
+.Confirmation .confirmation-message {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Supporting text */
+.Confirmation .details {
+  text-align: center;
+  font-weight: 500;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Thank you */
+.Confirmation .thank-you {
+  margin: 20px 0;
+}
+
+/* Booking reference */
+.Confirmation .reference {
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.Confirmation .button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.Confirmation .browse {
+  background-color: #91b7aa;
+  color: white;
+}
+
+.Confirmation .cancel {
+  background-color: #f2aaa3;
+  color: white;
+}
+
+.Confirmation .home-link {
+  margin-top: 1rem;
+}
+
+/*===============================================================*/
+/*Cancelation Section*/
+/*===============================================================*/
+
+/* Cancellation CSS rules*/
+.Cancellation {
+  display: none;
+  background-color: #fdf6e4;
+  color: #3e3e4a;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Cancellation .back-link {
+  align-self: flex-start;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.Cancellation .logo {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.Cancellation .logo span {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Monoton', cursive;
+}
+
+.Cancellation .headline {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.Cancellation .subtext {
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 320px;
+}
+
+.refund-box {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.refund-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Checkmark goes here */
+
+.refund-text {
+  color: #91b7aa;
+  font-weight: 500;
+}
+
+.Cancellation .refund-text {
+  color: #91b7aa;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Cancellation .support {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.Cancellation .support a {
+  color: #66a3d2;
+  text-decoration: underline;
+}
+
+.Cancellation .rating {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Cancellation .stars {
+  text-align: center;
+  color: #f2b01e;
+  letter-spacing: 5px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.Cancellation .illustration {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Cancellation .illustration img {
+  width: 80px;
+  height: auto;
+}
+
+.Cancellation .button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #91b7aa;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.Cancellation .home-link {
+  text-decoration: underline;
+  color: #3e3e4a;
+}
+
+.full-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/img/image\ 9.png'); /* Replace with actual filename if needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*===============================================================*/
+/*Media Queries*/
+/*===============================================================*/
+
+@media (min-width: 800px) {
+  .Confirmation .confirmation-message {
+    font-style: italic;
+  }
+}
+
+/* Tablets */
+@media (min-width: 600px) {
+  #home_section {
+    padding: 12px 48px;
+  }
+}
+
+/* Laptops */
+@media (min-width: 768px) {
+  #home_section {
+    padding: 12px 200px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  #home_section {
+    padding: 12px 300px;
+  }
+}
+
+/* Desktops (Large Edition) */
+@media (min-width: 1280px) {
+  #home_section {
+    padding: 12px 500px;
+  }
+}
+
+/* XXL Screens */
+@media (min-width: 1440px) {
+  #home_section {
+    padding: 12px 600px;
+  }
+}

@@ -1,18 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Booking App</title>
-  <link href="style.css" rel="stylesheet">
-  <script src="main.js" defer></script>
-</head>
-
-<body>
-  <div>
-    <h1>Test Content</h1>
-  </div>
-</body>
-
+  <head>
+    <!-- =============================================================== -->
+    <!-- App Info -->
+    <!-- =============================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <!-- =============================================================== -->
+    <!-- Links -->
+    <!-- =============================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- =============================================================== -->
+    <!-- Scripts -->
+    <!-- =============================================================== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- =============================================================== -->
+    <!-- Weolcome Section -->
+    <!-- =============================================================== -->
+    <section id="welcome-section" class="full-section">
+      <div class="overlay">
+        <img src="./img/FUNSlot.png" alt="FUNSlot Logo" class="logo">
+        <div class="welcome-text">
+          <p>Discover, book, and experience your next adventure with FUNSlot</p>
+        </div>
+      </div>
+      <div class="button-area">
+        <button class="main-btn" id="go-login">LOGIN</button>
+        <button class="main-btn" id="go-signup">SIGN UP</button>
+      </div>
+    </section>
+    <!-- =============================================================== -->
+    <!-- Login Section -->
+    <!-- =============================================================== -->
+    <section id="login-section" class="full-section">
+      <div class="form-container">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="main-btn auth_btn">LOGIN</button>
+      </div>
+    </section>
+    <!-- =============================================================== -->
+    <!-- Signup Section -->
+    <!-- =============================================================== -->
+    <section id="signup-section" class="full-section">
+      <div class="form-container">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Mobile Number">
+        <input type="password" placeholder="Create Password">
+        <input type="password" placeholder="Confirm Password">
+        <button class="main-btn auth_btn">SIGN UP</button>
+      </div>
+    </section>
+    <!-- =============================================================== -->
+    <!-- Home Section -->
+    <!-- =============================================================== -->
+    <section id="home_section">
+      <div id="navbar">
+        <div id="profile">
+          <img src="./img/Man.png" alt="profile_picture">
+          <span>timmy</span>
+        </div>
+        <img class="logo" src="./img/logo.png" alt="logo">
+      </div>
+      <div id="card_spawner">
+      </div>
+    </section>
+    <!-- =============================================================== -->
+    <!-- Navigatron -->
+    <!-- =============================================================== -->
+    <div id="navigatron">
+      <a href="">
+        <img src="./img/home.png" alt="home">
+      </a>
+      <a id="shroud_scan" href="">
+        <img src="./img/search.png" alt="home">
+      </a>
+      <a href="">
+        <img src="./img/callender.png" alt="home">
+      </a>
+      <div>
+        <button type="">I</button>
+        <input placeholder="Search..." type="" name="" value="">
+      </div>
+    </div>
+    <!-- =============================================================== -->
+    <!-- Confirmation Page -->
+    <!-- =============================================================== -->
+    <section class="Confirmation">
+      <a class="back-link" href="#">&larr; Home</a>
+      <!-- Logos -->
+      <!-- =========== -->
+      <div class="logo"><span>FUN</span>Slot</div>
+      <div class="checkmark">
+        <img src="img/Checkmark.png" alt="Checkmark">
+      </div>
+      <!-- Confirmation details -->
+      <!-- =========== -->
+      <div class="confirmation-message">Your Booking was confirmed!</div>
+      <div class="details">
+        Your order has been processed and your order details can be viewed
+        anytime by going to the booking page within the app
+      </div>
+      <!-- =========== -->
+      <div class="details">
+        You will shortly get an email confirmation and a receipt of this order
+      </div>
+      <div class="thank-you">Thank you!</div>
+      <div class="reference">Booking reference ID: ••••••</div>
+      <!-- =========== -->
+      <button class="button browse">Browse more activities</button>
+      <button class="button cancel">Cancel this order here</button>
+      <div class="home-link">Return to Home page</div>
+    </section>
+    <!-- =============================================================== -->
+    <!-- Cancelation Page -->
+    <!-- =============================================================== -->
+    <section class="Cancellation" style="display: none;">
+      <a class="back-link" href="#">&larr; Home</a>
+      <!-- =========== -->
+      <div class="logo"><span>FUN</span>Slot</div>
+      <div class="headline">We’re sorry to see you go!</div>
+      <div class="subtext">
+        Your booking for
+        <strong>*Event Name*</strong>
+        on
+        <strong>*Date*</strong>
+        has been successfully cancelled.
+      </div>
+      <!-- Main refund box -->
+      <!-- =========== -->
+      <div class="refund-box">
+        <div class="refund-row">
+          <!-- Logo & Refund days -->
+          <!-- =========== -->
+          <img class="checkmark" src="img/SmallCheckmark.png" alt="Small Checkmark">
+          <div class="refund-text">
+            You will receive a refund for this order in X business days
+          </div>
+        </div>
+        <!-- Tech support & Rating -->
+        <!-- =========== -->
+        <div class="support">
+          Need help? Reach out to us on our
+          <a href="#">Support team</a>
+        </div>
+        <div class="rating">Rate us based on your experience!</div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <!-- =========== -->
+      <div class="illustration">
+        <!-- You can replace this with an inline SVG or actual image -->
+        <img src="img/Man.png" alt="Person illustration">
+      </div>
+      <!-- =========== -->
+      <button class="button">Browse more activities</button>
+      <div class="home-link">Return to Home page</div>
+    </section>
+  </body>
 </html>
