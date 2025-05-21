@@ -535,6 +535,123 @@ input {
   justify-content: space-between;
 }
 
+/* Booking page */
+
+
+
+.form-wrapper {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+}
+
+.form-container {
+  background-color: #383a59;
+  border-radius: 0 0 40px 50px;
+  padding: 2rem;
+  flex-direction: column;
+  color: rgb(255, 240, 172);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+   margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+select,
+button {
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  background-color: #a9d39b;
+  color: #333;
+}
+
+.name-group,
+.location-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.name-group input,
+.location-group select {
+  flex: 1 1 48%;
+}
+
+button[type="submit"] {
+  background-color: #83b1a1;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #76a193;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .name-group input,
+  .location-group select {
+    flex: 1 1 100%;
+  }
+
+  .form-container {
+    padding: 1.5rem 1rem;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0e9;
+  margin: 0;
+}
+
+#greenBox {
+  width: 160px;
+  height: 50px;
+  background-color: #a9d39b;
+  border-radius: 20px;
+}
+
+#greenBox {
+  width: 160px;
+  height: 50px;
+  background-color: #a9d39b;
+  border-radius: 20px;
+}
+
 /*===============================================================*/
 /*Media Queries*/
 /*===============================================================*/
