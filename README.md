@@ -1,5 +1,8 @@
+https://college-booking-app.netlify.app/
+
 # Requirements
 Single file
+Mobile only
 
 # Coding Style
 Use 2 spacing instead of 4<br>
@@ -24,3 +27,5 @@ Comment as you go<br>
 ```
 bun dev
 ```
+
+![image](https://github.com/user-attachments/assets/ef8442bc-056c-4698-9401-85cc1974d5bc)
