@@ -261,9 +261,6 @@ input {
 .card {
   display: flex;
   flex-direction: column;
-
-  max-height: 300px;
-
   border-radius: 12px;
   background: var(--secondary);
 }
@@ -529,7 +526,7 @@ input {
 .full-section {
   height: 100vh;
   width: 100vw;
-  background-image: url('/img/image\ 9.png');
+  background-image: url('../img/image\ 9.png');
   /* Replace with actual filename if needed */
   background-size: cover;
   background-position: center;
