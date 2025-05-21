@@ -88,19 +88,19 @@ cards.conjureCards();
 
 /* Aidans jQuery Code */
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('#home_section').hide();
   $('#navigatron').hide();
 
   // Navigatron
   // =====================
-  $('#shroud_scan').click(function(e) {
+  $('#shroud_scan').click(function (e) {
     e.preventDefault();
     $('#navigatron a').hide();
     $('#navigatron div').css("display", "flex");
   });
 
-  $('#navigatron div button').click(function(e) {
+  $('#navigatron div button').click(function (e) {
     e.preventDefault();
     $('#navigatron a').show();
     $('#navigatron div').hide();
@@ -110,51 +110,59 @@ $(document).ready(function() {
   // =====================
 
   // Show booking confirmation section
-  $('.find_more_btn').click(function() {
-    $('.Confirmation').css('display', 'flex');
+  $('.find_more_btn').click(function () {
+    $('.form-wrapper').css('display', 'flex');
     $('#home_section').hide();
     $('.Cancellation').hide();
     $('#navigatron').hide();
   });
 
+  $('.book_btn').click(function () {
+    $('.form-wrapper').hide();
+    $('#home_section').hide();
+    $('.Confirmation').css('display', 'flex');
+    $('.Cancellation').hide();
+    $('#navigatron').hide();
+  });
+
   // Show booking confirmation section
-  $('#show-confirmation').click(function() {
-    $('.Confirmation').show();
+  $('#show-confirmation').click(function () {
+    $('.Confirmation').css('display', 'flex');
     $('.Cancellation').hide();
   });
 
   // Show booking cancellation section
-  $('#show-cancellation').click(function() {
+  $('#show-cancellation').click(function () {
     $('.Cancellation').css('display', 'flex');
     $('.Confirmation').hide();
   });
 
   // Optional: Add logic inside the confirmation section
-  $('.cancel').click(function() {
+  $('.cancel').click(function () {
     $('.Confirmation').hide();
     $('.Cancellation').css('display', 'flex');
   });
 
   // Optional: Return to home logic
-  $('.home-link, .back-link').click(function() {
+  $('.home-link, .back-link').click(function () {
     $('.Confirmation, .Cancellation').hide();
     $('#home_section').show();
     $('#navigatron').css('display', 'flex');
   });
 
-  $('#go-login').click(function() {
+  $('#go-login').click(function () {
     $('#login-section').css('display', 'flex');
     $('#signup-section').hide();
     $('#welcome-section').hide();
   })
 
-  $('#go-signup').click(function() {
+  $('#go-signup').click(function () {
     $('#signup-section').css('display', 'flex');
     $('#welcome-section').hide();
     $('#login-section').hide();
   })
 
-  $('.auth_btn').click(function() {
+  $('.auth_btn').click(function () {
     $('#signup-section').hide();
     $('#welcome-section').hide();
     $('#login-section').hide();
@@ -163,7 +171,7 @@ $(document).ready(function() {
   })
 });
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   let scroll_top = $(window).scrollTop();
   let window_height = $(window).height();
   let document_height = $(document).height();
