@@ -1,4 +1,4 @@
-https://college-booking-app.netlify.app/
+https://fun-slot-booking.netlify.app
 
 # Requirements
 Single file
